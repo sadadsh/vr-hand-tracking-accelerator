@@ -1,18 +1,56 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Data directories (too large for git)
+data/
+*.npz
+*.h5
+*.pkl
+*.pth
+*.onnx
 
-# Other files and folders
-.settings/
+# Compiled files
+*.pyc
+__pycache__/
+*.so
+*.dll
+*.dylib
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Hardware build files
+*.bit
+*.ltx
+*.jou
+*.str
+vivado.log
+vivado_*.backup.log
+webtalk/
+.Xil/
+
+# HLS build files
+*.app
+solution*/
+.autopilot/
