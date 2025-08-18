@@ -1,0 +1,3040 @@
+{
+  "model_info": {
+    "original_accuracy": 89.86633692516045,
+    "quantized_accuracy": 89.30695401283637,
+    "accuracy_drop": 0.5593829123240823,
+    "compression_ratio": 4.327565861727844,
+    "quantized_size_kb": 58768.21484375
+  },
+  "layers": {
+    "backbone.conv1": {
+      "shape": [
+        64,
+        3,
+        7,
+        7
+      ],
+      "scale": 0.006566300988197327,
+      "zero_point": 0,
+      "packed_size": 4704
+    },
+    "backbone.bn1": {
+      "shape": [
+        64
+      ],
+      "scale": 0.0039373282343149185,
+      "zero_point": 0,
+      "packed_size": 32
+    },
+    "backbone.layer1.0.conv1": {
+      "shape": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "scale": 0.004721418954432011,
+      "zero_point": 0,
+      "packed_size": 2048
+    },
+    "backbone.layer1.0.bn1": {
+      "shape": [
+        64
+      ],
+      "scale": 0.0030061285942792892,
+      "zero_point": 0,
+      "packed_size": 32
+    },
+    "backbone.layer1.0.conv2": {
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "scale": 0.003317487658932805,
+      "zero_point": 0,
+      "packed_size": 18432
+    },
+    "backbone.layer1.0.bn2": {
+      "shape": [
+        64
+      ],
+      "scale": 0.0019358379067853093,
+      "zero_point": 0,
+      "packed_size": 32
+    },
+    "backbone.layer1.0.conv3": {
+      "shape": [
+        256,
+        64,
+        1,
+        1
+      ],
+      "scale": 0.0031018222216516733,
+      "zero_point": 0,
+      "packed_size": 8192
+    },
+    "backbone.layer1.0.bn3": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0028627964202314615,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer1.0.downsample.0": {
+      "shape": [
+        256,
+        64,
+        1,
+        1
+      ],
+      "scale": 0.008857552893459797,
+      "zero_point": 0,
+      "packed_size": 8192
+    },
+    "backbone.layer1.0.downsample.1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0037311813794076443,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer1.1.conv1": {
+      "shape": [
+        64,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0014992996584624052,
+      "zero_point": 0,
+      "packed_size": 8192
+    },
+    "backbone.layer1.1.bn1": {
+      "shape": [
+        64
+      ],
+      "scale": 0.002939519239589572,
+      "zero_point": 0,
+      "packed_size": 32
+    },
+    "backbone.layer1.1.conv2": {
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "scale": 0.003180278465151787,
+      "zero_point": 0,
+      "packed_size": 18432
+    },
+    "backbone.layer1.1.bn2": {
+      "shape": [
+        64
+      ],
+      "scale": 0.002247357042506337,
+      "zero_point": 0,
+      "packed_size": 32
+    },
+    "backbone.layer1.1.conv3": {
+      "shape": [
+        256,
+        64,
+        1,
+        1
+      ],
+      "scale": 0.002894505625590682,
+      "zero_point": 0,
+      "packed_size": 8192
+    },
+    "backbone.layer1.1.bn3": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001519445446319878,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer1.2.conv1": {
+      "shape": [
+        64,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0016251596389338374,
+      "zero_point": 0,
+      "packed_size": 8192
+    },
+    "backbone.layer1.2.bn1": {
+      "shape": [
+        64
+      ],
+      "scale": 0.0020137715619057417,
+      "zero_point": 0,
+      "packed_size": 32
+    },
+    "backbone.layer1.2.conv2": {
+      "shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "scale": 0.0024057382252067327,
+      "zero_point": 0,
+      "packed_size": 18432
+    },
+    "backbone.layer1.2.bn2": {
+      "shape": [
+        64
+      ],
+      "scale": 0.002521053422242403,
+      "zero_point": 0,
+      "packed_size": 32
+    },
+    "backbone.layer1.2.conv3": {
+      "shape": [
+        256,
+        64,
+        1,
+        1
+      ],
+      "scale": 0.0021279440261423588,
+      "zero_point": 0,
+      "packed_size": 8192
+    },
+    "backbone.layer1.2.bn3": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0019430971005931497,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer2.0.conv1": {
+      "shape": [
+        128,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0022119719069451094,
+      "zero_point": 0,
+      "packed_size": 16384
+    },
+    "backbone.layer2.0.bn1": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0020633256062865257,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.0.conv2": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "scale": 0.0012537812581285834,
+      "zero_point": 0,
+      "packed_size": 73728
+    },
+    "backbone.layer2.0.bn2": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0021174675785005093,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.0.conv3": {
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ],
+      "scale": 0.0022803049068897963,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.0.bn3": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0033165470231324434,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer2.0.downsample.0": {
+      "shape": [
+        512,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0053480034694075584,
+      "zero_point": 0,
+      "packed_size": 65536
+    },
+    "backbone.layer2.0.downsample.1": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0037649900186806917,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer2.1.conv1": {
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.0016548981657251716,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.1.bn1": {
+      "shape": [
+        128
+      ],
+      "scale": 0.001264748745597899,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.1.conv2": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "scale": 0.0027302035596221685,
+      "zero_point": 0,
+      "packed_size": 73728
+    },
+    "backbone.layer2.1.bn2": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0021047028712928295,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.1.conv3": {
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ],
+      "scale": 0.002344746608287096,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.1.bn3": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0033824334386736155,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer2.2.conv1": {
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.0013557365164160728,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.2.bn1": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0017326142406091094,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.2.conv2": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "scale": 0.00137830909807235,
+      "zero_point": 0,
+      "packed_size": 73728
+    },
+    "backbone.layer2.2.bn2": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0024747552815824747,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.2.conv3": {
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ],
+      "scale": 0.0017288180533796549,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.2.bn3": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0018875662935897708,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer2.3.conv1": {
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.0025600146036595106,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.3.bn1": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0014891966711729765,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.3.conv2": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "scale": 0.0015070531517267227,
+      "zero_point": 0,
+      "packed_size": 73728
+    },
+    "backbone.layer2.3.bn2": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0018127555958926678,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.3.conv3": {
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ],
+      "scale": 0.0016865638317540288,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.3.bn3": {
+      "shape": [
+        512
+      ],
+      "scale": 0.002484505297616124,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer2.4.conv1": {
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.0014901261311024427,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.4.bn1": {
+      "shape": [
+        128
+      ],
+      "scale": 0.00143897975794971,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.4.conv2": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "scale": 0.0013305854517966509,
+      "zero_point": 0,
+      "packed_size": 73728
+    },
+    "backbone.layer2.4.bn2": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0023466323036700487,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.4.conv3": {
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ],
+      "scale": 0.0019714152440428734,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.4.bn3": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0019275846425443888,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer2.5.conv1": {
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.0016884040087461472,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.5.bn1": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0015343469567596912,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.5.conv2": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "scale": 0.0010463824728503823,
+      "zero_point": 0,
+      "packed_size": 73728
+    },
+    "backbone.layer2.5.bn2": {
+      "shape": [
+        128
+      ],
+      "scale": 0.001599408802576363,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.5.conv3": {
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ],
+      "scale": 0.0025408512447029352,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.5.bn3": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0023694874253124,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer2.6.conv1": {
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.0012792466441169381,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.6.bn1": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0014769103145226836,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.6.conv2": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "scale": 0.0010756674455478787,
+      "zero_point": 0,
+      "packed_size": 73728
+    },
+    "backbone.layer2.6.bn2": {
+      "shape": [
+        128
+      ],
+      "scale": 0.001735301106236875,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.6.conv3": {
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ],
+      "scale": 0.0017238208092749119,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.6.bn3": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0020679065492004156,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer2.7.conv1": {
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.001819011871702969,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.7.bn1": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0022087902761995792,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.7.conv2": {
+      "shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "scale": 0.0015582871856167912,
+      "zero_point": 0,
+      "packed_size": 73728
+    },
+    "backbone.layer2.7.bn2": {
+      "shape": [
+        128
+      ],
+      "scale": 0.0019942796789109707,
+      "zero_point": 0,
+      "packed_size": 64
+    },
+    "backbone.layer2.7.conv3": {
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ],
+      "scale": 0.0027194719295948744,
+      "zero_point": 0,
+      "packed_size": 32768
+    },
+    "backbone.layer2.7.bn3": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0019850661046802998,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer3.0.conv1": {
+      "shape": [
+        256,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.0025171295274049044,
+      "zero_point": 0,
+      "packed_size": 65536
+    },
+    "backbone.layer3.0.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0024669345002621412,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.0.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0018360905814915895,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.0.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.002462160075083375,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.0.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.002711196895688772,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.0.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0026622447185218334,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.0.downsample.0": {
+      "shape": [
+        1024,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.0037254448980093002,
+      "zero_point": 0,
+      "packed_size": 262144
+    },
+    "backbone.layer3.0.downsample.1": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.003008397528901696,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.1.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0012370184995234013,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.1.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0010401112958788872,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.1.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0009949365630745888,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.1.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0013870028778910637,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.1.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.001207526191137731,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.1.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0023608801420778036,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.2.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0012840519193559885,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.2.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0011088348692283034,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.2.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0009276289492845535,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.2.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0011650158558040857,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.2.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0015598968602716923,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.2.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.002738434122875333,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.3.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0024073896929621696,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.3.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001550785731524229,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.3.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0012709299335256219,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.3.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0020033877808600664,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.3.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0017770923441275954,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.3.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0026515971403568983,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.4.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.001256271149031818,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.4.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0012949788942933083,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.4.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0007176229264587164,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.4.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0016742506995797157,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.4.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0015043633757159114,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.4.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.002384091028943658,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.5.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.001471904688514769,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.5.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0018923741299659014,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.5.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0014390144497156143,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.5.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0022295413073152304,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.5.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.002409085165709257,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.5.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.002628479851409793,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.6.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0014869553269818425,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.6.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0014225670602172613,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.6.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0008498213137499988,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.6.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.00195671827532351,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.6.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.002120734192430973,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.6.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0018197791650891304,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.7.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0011247436050325632,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.7.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0010191606124863029,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.7.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0010347068309783936,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.7.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001336876885034144,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.7.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0014587542973458767,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.7.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0013043925864621997,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.8.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0013882687781006098,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.8.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001126756309531629,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.8.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0013754733372479677,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.8.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0016424531349912286,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.8.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.001495967386290431,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.8.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0016862332122400403,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.9.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0015903676394373178,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.9.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001234017196111381,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.9.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0013605410931631923,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.9.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001933793188072741,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.9.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0019461121410131454,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.9.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0013661744305863976,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.10.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0013093590969219804,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.10.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0010660492116585374,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.10.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0011429666774347425,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.10.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0016396051505580544,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.10.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0015743797412142158,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.10.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0016779133584350348,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.11.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0015762621769681573,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.11.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0010158820077776909,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.11.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0012036708649247885,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.11.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0020778020843863487,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.11.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0017039633821696043,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.11.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.002370608039200306,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.12.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0012314666528254747,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.12.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0012650107964873314,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.12.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0008955534431152046,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.12.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001466261106543243,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.12.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0011205690680071712,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.12.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0018717789789661765,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.13.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0015241774963214993,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.13.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001573253539390862,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.13.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0010074020829051733,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.13.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0017689426895231009,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.13.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.001392289763316512,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.13.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.002050581853836775,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.14.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0014000149676576257,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.14.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0013817758299410343,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.14.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0014260613825172186,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.14.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0016124853864312172,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.14.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0021733087487518787,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.14.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.002271038480103016,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.15.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0022496541496366262,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.15.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001392304664477706,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.15.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0008862669346854091,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.15.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0013834277633577585,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.15.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0024425687734037638,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.15.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0016990702133625746,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.16.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0020908680744469166,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.16.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0013462180504575372,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.16.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0008651749230921268,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.16.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001607113634236157,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.16.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0013129505096003413,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.16.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0014044842682778835,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.17.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0018182976637035608,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.17.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0014408054994419217,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.17.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0009803245775401592,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.17.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001741319429129362,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.17.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0012706751003861427,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.17.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0016461090417578816,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.18.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.001658208086155355,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.18.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0011866898275911808,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.18.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.001570351654663682,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.18.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0015864802990108728,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.18.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0025196054484695196,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.18.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.001797512057237327,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.19.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0016622628318145871,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.19.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0013014724245294929,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.19.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0008292138227261603,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.19.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0019219423411414027,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.19.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0014514187350869179,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.19.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.001663806615397334,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.20.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0020588531624525785,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.20.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001423242618329823,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.20.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0010007093660533428,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.20.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0018583725905045867,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.20.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0013447609962895513,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.20.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0014558449620380998,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.21.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0015515469713136554,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.21.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0014031335012987256,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.21.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.000998693867586553,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.21.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0017353759612888098,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.21.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.00163915881421417,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.21.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0017407190753147006,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.22.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0017168114427477121,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.22.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0017171659274026752,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.22.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.001798541285097599,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.22.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.002182678086683154,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.22.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0012978349113836884,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.22.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.002434569178149104,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.23.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0018228082917630672,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.23.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0013928160769864917,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.23.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0008523195283487439,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.23.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001791650429368019,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.23.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0013904481893405318,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.23.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.001961519243195653,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.24.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0016691145719960332,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.24.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0014007430290803313,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.24.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0010618866654112935,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.24.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0016460136976093054,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.24.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.001278759096749127,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.24.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.001758045982569456,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.25.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0013628143351525068,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.25.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.00162853195797652,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.25.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0009756943327374756,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.25.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.003710924182087183,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.25.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0018945508636534214,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.25.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0019617013167589903,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.26.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0009773173369467258,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.26.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0014315476873889565,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.26.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0009472444653511047,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.26.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001758228987455368,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.26.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.00195670104585588,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.26.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.001877830596640706,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.27.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0015934060793370008,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.27.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0014990887138992548,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.27.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0010023982031270862,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.27.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0017102973069995642,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.27.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0017343881772831082,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.27.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0014487734297290444,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.28.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0018568499945104122,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.28.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0016095141181722283,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.28.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0011401037918403745,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.28.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001953840022906661,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.28.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.002385806292295456,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.28.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0020702355541288853,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.29.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0020586138125509024,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.29.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0025846881326287985,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.29.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0010775432456284761,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.29.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0017151637002825737,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.29.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.001524770399555564,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.29.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.001741282525472343,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.30.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.001863008365035057,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.30.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0015324661508202553,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.30.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.001146288006566465,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.30.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0017653589602559805,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.30.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0016122928354889154,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.30.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.001557680545374751,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.31.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.001458223327063024,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.31.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001663601491600275,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.31.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0009795734658837318,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.31.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0015289640286937356,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.31.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0019126107217743993,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.31.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0018504305044189095,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.32.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.002033310243859887,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.32.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0015190555714070797,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.32.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0013612799812108278,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.32.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0015764926793053746,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.32.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0019992704037576914,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.32.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0019257640233263373,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.33.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0015331035247072577,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.33.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0015424954472109675,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.33.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0014954422367736697,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.33.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0017267916118726134,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.33.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.001967823365703225,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.33.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0018514003604650497,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.34.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.001870243693701923,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.34.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0014821671647951007,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.34.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.001584067358635366,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.34.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.001640878850594163,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.34.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.0012992280535399914,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.34.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.0019725209567695856,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer3.35.conv1": {
+      "shape": [
+        256,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0027093335520476103,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.35.bn1": {
+      "shape": [
+        256
+      ],
+      "scale": 0.0015736569184809923,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.35.conv2": {
+      "shape": [
+        256,
+        256,
+        3,
+        3
+      ],
+      "scale": 0.0013879839098080993,
+      "zero_point": 0,
+      "packed_size": 294912
+    },
+    "backbone.layer3.35.bn2": {
+      "shape": [
+        256
+      ],
+      "scale": 0.003234273986890912,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "backbone.layer3.35.conv3": {
+      "shape": [
+        1024,
+        256,
+        1,
+        1
+      ],
+      "scale": 0.002600202802568674,
+      "zero_point": 0,
+      "packed_size": 131072
+    },
+    "backbone.layer3.35.bn3": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.002101703081279993,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "backbone.layer4.0.conv1": {
+      "shape": [
+        512,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.0026446522679179907,
+      "zero_point": 0,
+      "packed_size": 262144
+    },
+    "backbone.layer4.0.bn1": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0020195641554892063,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer4.0.conv2": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "scale": 0.0015397327952086926,
+      "zero_point": 0,
+      "packed_size": 1179648
+    },
+    "backbone.layer4.0.bn2": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0018600402399897575,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer4.0.conv3": {
+      "shape": [
+        2048,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.002472232561558485,
+      "zero_point": 0,
+      "packed_size": 524288
+    },
+    "backbone.layer4.0.bn3": {
+      "shape": [
+        2048
+      ],
+      "scale": 0.005424989853054285,
+      "zero_point": 0,
+      "packed_size": 1024
+    },
+    "backbone.layer4.0.downsample.0": {
+      "shape": [
+        2048,
+        1024,
+        1,
+        1
+      ],
+      "scale": 0.004010095726698637,
+      "zero_point": 0,
+      "packed_size": 1048576
+    },
+    "backbone.layer4.0.downsample.1": {
+      "shape": [
+        2048
+      ],
+      "scale": 0.009663308970630169,
+      "zero_point": 0,
+      "packed_size": 1024
+    },
+    "backbone.layer4.1.conv1": {
+      "shape": [
+        512,
+        2048,
+        1,
+        1
+      ],
+      "scale": 0.0017451117746531963,
+      "zero_point": 0,
+      "packed_size": 524288
+    },
+    "backbone.layer4.1.bn1": {
+      "shape": [
+        512
+      ],
+      "scale": 0.001801849459297955,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer4.1.conv2": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "scale": 0.0015149274840950966,
+      "zero_point": 0,
+      "packed_size": 1179648
+    },
+    "backbone.layer4.1.bn2": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0019281599670648575,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer4.1.conv3": {
+      "shape": [
+        2048,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.0018028590129688382,
+      "zero_point": 0,
+      "packed_size": 524288
+    },
+    "backbone.layer4.1.bn3": {
+      "shape": [
+        2048
+      ],
+      "scale": 0.007057009730488062,
+      "zero_point": 0,
+      "packed_size": 1024
+    },
+    "backbone.layer4.2.conv1": {
+      "shape": [
+        512,
+        2048,
+        1,
+        1
+      ],
+      "scale": 0.0033559941221028566,
+      "zero_point": 0,
+      "packed_size": 524288
+    },
+    "backbone.layer4.2.bn1": {
+      "shape": [
+        512
+      ],
+      "scale": 0.0036450745537877083,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer4.2.conv2": {
+      "shape": [
+        512,
+        512,
+        3,
+        3
+      ],
+      "scale": 0.0010411470429971814,
+      "zero_point": 0,
+      "packed_size": 1179648
+    },
+    "backbone.layer4.2.bn2": {
+      "shape": [
+        512
+      ],
+      "scale": 0.002297033090144396,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "backbone.layer4.2.conv3": {
+      "shape": [
+        2048,
+        512,
+        1,
+        1
+      ],
+      "scale": 0.0023628207854926586,
+      "zero_point": 0,
+      "packed_size": 524288
+    },
+    "backbone.layer4.2.bn3": {
+      "shape": [
+        2048
+      ],
+      "scale": 0.009706410579383373,
+      "zero_point": 0,
+      "packed_size": 1024
+    },
+    "classifier.1": {
+      "shape": [
+        2048,
+        2048
+      ],
+      "scale": 0.00014431573799811304,
+      "zero_point": 0,
+      "packed_size": 2097152
+    },
+    "classifier.3": {
+      "shape": [
+        2048
+      ],
+      "scale": 0.007939416915178299,
+      "zero_point": 0,
+      "packed_size": 1024
+    },
+    "classifier.5": {
+      "shape": [
+        1024,
+        2048
+      ],
+      "scale": 0.000159309696755372,
+      "zero_point": 0,
+      "packed_size": 1048576
+    },
+    "classifier.7": {
+      "shape": [
+        1024
+      ],
+      "scale": 0.007939218543469906,
+      "zero_point": 0,
+      "packed_size": 512
+    },
+    "classifier.9": {
+      "shape": [
+        512,
+        1024
+      ],
+      "scale": 0.0001583073753863573,
+      "zero_point": 0,
+      "packed_size": 262144
+    },
+    "classifier.11": {
+      "shape": [
+        512
+      ],
+      "scale": 0.007952899672091007,
+      "zero_point": 0,
+      "packed_size": 256
+    },
+    "classifier.13": {
+      "shape": [
+        256,
+        512
+      ],
+      "scale": 0.0002463834243826568,
+      "zero_point": 0,
+      "packed_size": 65536
+    },
+    "classifier.15": {
+      "shape": [
+        256
+      ],
+      "scale": 0.008480126038193703,
+      "zero_point": 0,
+      "packed_size": 128
+    },
+    "classifier.17": {
+      "shape": [
+        18,
+        256
+      ],
+      "scale": 0.00036548837670125067,
+      "zero_point": 0,
+      "packed_size": 2304
+    }
+  },
+  "fpga_config": {
+    "target_device": "Zybo Z7-20",
+    "weight_format": "INT4_PACKED",
+    "activation_format": "INT8",
+    "total_memory_kb": 31749.6875,
+    "estimated_inference_cycles": 65023360
+  }
+}

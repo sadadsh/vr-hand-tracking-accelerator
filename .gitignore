@@ -36,6 +36,7 @@ tmp/
 venv/
 env/
 .env
+.venv/
 
 # Jupyter notebooks checkpoints
 .ipynb_checkpoints/
@@ -49,6 +50,25 @@ vivado.log
 vivado_*.backup.log
 webtalk/
 .Xil/
+
+# Vivado project build directories (RTL)
+fpga/rtl/cnn_accelerator_rtl.cache/
+fpga/rtl/cnn_accelerator_rtl.gen/
+fpga/rtl/cnn_accelerator_rtl.hw/
+fpga/rtl/cnn_accelerator_rtl.ip_user_files/
+fpga/rtl/cnn_accelerator_rtl.runs/
+fpga/rtl/cnn_accelerator_rtl.srcs/
+fpga/rtl/.Xil/
+fpga/rtl/*.jou
+fpga/rtl/*.log
+
+# Keep the .xpr file but ignore build artifacts
+# fpga/rtl/cnn_accelerator_rtl.xpr  # Keep this file
+
+# HLS (deprecated) and IDE artifacts
+fpga/hls/
+fpga/cnn_accelerator_hls/
+fpga/_ide/
 
 # HLS build files
 *.app
