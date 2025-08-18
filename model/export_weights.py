@@ -14,11 +14,8 @@ import json
 import argparse
 import logging
 from pathlib import Path
-from typing import Dict, List, Tuple, Any
-import numpy as np
+from typing import Dict, Any
 import re
-import torch
-import torch.nn as nn
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -32,6 +29,7 @@ class FPGAWeightExporter:
     """
     
     def __init__(self, config: Dict[str, Any]):
+        super().__init__()
         self.config = config
         self.weights_dir = Path(config['weights_input_dir'])
         self.output_dir = Path(config['output_dir'])
@@ -78,7 +76,6 @@ class FPGAWeightExporter:
             raise FileNotFoundError(f"weights.h not found: {weights_file}")
         
         layer_info = {}
-        current_layer = None
         
         with open(weights_file, 'r') as f:
             content = f.read()
@@ -674,7 +671,7 @@ class FPGAWeightExporter:
             self.generate_build_scripts()
             
             # Step 6: Generate summary
-            summary = self.generate_summary_report(memory_analysis)
+            self.generate_summary_report(memory_analysis)
             
             print(f"\n" + "="*80)
             print("FPGA EXPORT COMPLETED!")
