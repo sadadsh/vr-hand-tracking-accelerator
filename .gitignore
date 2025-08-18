@@ -70,6 +70,10 @@ fpga/hls/
 fpga/cnn_accelerator_hls/
 fpga/_ide/
 
+# Large weight files (can be regenerated)
+model/quantized/weights.h
+*.weights
+
 # HLS build files
 *.app
 solution*/
